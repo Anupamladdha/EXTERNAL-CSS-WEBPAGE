@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(images/bg-intro-desktop.png);
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 100%, 74%) ;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.left , .right{
+  margin: 30px;
+}
+h1{
+  font-size:40px;
+  width: 400px;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.left p{
+  width: 500px;
+  color: #dee3e2;
+}
+
+.cost{
+  width: 600px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 20px;
+  color: #dee3e2;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 0 rgba(0,0,0,0.2);
+}
+
+.cost span{
+  color: #f9f9f9;
+  font-weight: bold;
+}
+
+.form-box{
+  width: 600px;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 30px 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 0 rgba(0,0,0,0.2);
+
+}
+input{
+  border: 1.5px solid #dbdbdb;
+}
+input , button{
+  width: 550px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  font-weight: bold;
+}
+.input-wrappper{
+  position: relative;
+}
+small{
+  text-align: right;
+  display: none;
+  color: red;
+  margin-right: 40px;
+}
+.error-icon{
+  position: absolute;
+  right: 50px;
+  top :18px;
+  display: none;
+}
+.error-icon-display , .small-msg{
+  display: block
+}
+.input-border{
+  border: 2px solid red;
+}
+button{
+ background-color: hsl(154, 59%, 51%);
+ color: #f9f9f9;
+ font-weight: bold;
+ cursor: pointer;
+ border: none;
+}
+
+.form-box p{
+  font-size: 13px;
+  color: #808080;
+}
+
+.form-box span{
+  color: red;
+  font-weight: bold;
+}
+
+input:focus{
+  border: 1px solid black;
+}
+
+::placeholder{
+  font-weight: bold;
+  color: #888888;
+}
+
+@media screen and (max-width:768px) {
+
+  body{
+    text-align: center;
+  }
+  h1{
+    width: 65.104vw;
+    font-size:30px;
+    margin-bottom:10px;
+  }
+  .left p{
+    width: 65.104vw;
+  }
+  .cost{
+    width:78.125vw;
+    margin: 30px 0;
+  }
+  .form-box{
+    width:78.125vw;
+    margin: 20px 0;
+  }
+  input , button{
+    width:71.615vw;
+  }
+}
